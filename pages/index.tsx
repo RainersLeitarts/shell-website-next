@@ -1,12 +1,18 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
+import Navbar from '../components/Navbar'
+import HomeSection from '../components/HomeSection'
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      
+      <Navbar />
+      <div style={{marginTop: 'var(--nav-height)'}}></div>
+      <HomeSection />
+      <HomeSection dark={true}/>
+      <HomeSection />
+      <HomeSection dark={true}/>
+      <HomeSection />
     </div>
   )
 }
